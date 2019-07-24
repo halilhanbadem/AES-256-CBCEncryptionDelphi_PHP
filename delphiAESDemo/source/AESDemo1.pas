@@ -46,9 +46,9 @@ begin
   Encoding := TEncoding.ANSI;
   Cha := cmCBC;
   Pad := pmPKCS7;
-  Data := Encoding.GetBytes('halilhanbadem testi türkçe karakter');
-  Password := Encoding.GetBytes('pstestpstestpstestpstestpstest12');
-  IV := Encoding.GetBytes('ivtest_ivtest123');
+  Data := Enc.GetBytes('halilhanbadem testi tÃ¼rkÃ§e karakter');
+  Password := Enc.GetBytes('pstestpstestpstestpstestpstest12');
+  IV := Enc.GetBytes('ivtest_ivtest123');
 
   aesMemo.Lines.Text := TNetEncoding.Base64.EncodeBytesToString
     (TAESEncDec.Create.EncryptAES(Data, Password, Key_Size, IV, cha,
