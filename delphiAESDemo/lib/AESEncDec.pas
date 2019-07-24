@@ -1,3 +1,5 @@
+//Code Owner: https://stackoverflow.com/a/43591761
+
 unit AESencdec;
 
 interface
