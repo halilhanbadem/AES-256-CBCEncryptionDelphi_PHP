@@ -42,7 +42,7 @@ var
   Enc: TEncoding;
   Password, Data, IV, Crypto: TBytes;
 begin
-  Key_Size := 256;
+  size := 256;
   Encoding := TEncoding.ANSI;
   Cha := cmCBC;
   Pad := pmPKCS7;
@@ -51,7 +51,7 @@ begin
   IV := Enc.GetBytes('ivtest_ivtest123');
 
   aesMemo.Lines.Text := TNetEncoding.Base64.EncodeBytesToString
-    (TAESEncDec.Create.EncryptAES(Data, Password, Key_Size, IV, cha,
+    (TAESEncDec.Create.EncryptAES(Data, Password, Size, IV, cha,
     pad));
 end;
 
