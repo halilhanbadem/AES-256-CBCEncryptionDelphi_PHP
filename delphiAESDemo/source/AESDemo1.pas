@@ -43,7 +43,7 @@ var
   Password, Data, IV, Crypto: TBytes;
 begin
   size := 256;
-  Encoding := TEncoding.ANSI;
+  Enc := TEncoding.ANSI;
   Cha := cmCBC;
   Pad := pmPKCS7;
   Data := Enc.GetBytes('halilhanbadem testi türkçe karakter');
