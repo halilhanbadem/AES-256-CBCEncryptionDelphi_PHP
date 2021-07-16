@@ -1,3 +1,5 @@
+## Archived! because the cleaner version will be in the link below.
+
 # AES-256-CBC Encryption Delphi&PHP
 Delphi Encryption - PHP Decryption. OpenSSL method usage and AES type AES-256-CBC
 
